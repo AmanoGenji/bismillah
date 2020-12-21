@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>PHARMACY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="PharmacyFirstMain.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a>
+  <a href="PharmacySecondMain" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LOGIN</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">PHARMACY</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  
+
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="inside.jpg" style="width:100%" onclick="onClick(this)" alt="Complete Pharmacy">
+      <img src="harmacy.jpg" style="width:100%" onclick="onClick(this)" alt="Modern style pharmacy">
+      <img src="image.jpg" style="width:100%" onclick="onClick(this)" alt="The beautiful pharmacist is stacking the drugs on the shelf">
+      <img src="new4.jpg" style="width:100%" onclick="onClick(this)" alt="Doctors are looking for drugs according to a doctor's prescription">
+      <img src="logo1.jpg" style="width:100%" onclick="onClick(this)" alt="International famous pharmacy logo">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="banner.jpg" style="width:100%" onclick="onClick(this)" alt="An old woman buys medicine at a pharmacy">
+      <img src="pickup.jpg" style="width:100%" onclick="onClick(this)" alt="The cashier gives the purchased medicine to the customer with a smile">
+      <img src="pharmacy.jpg" style="width:100%" onclick="onClick(this)" alt="Married couples discuss the effects and benefits of drugs with pharmacists">
+      <img src="new3.jpg" style="width:100%" onclick="onClick(this)" alt="Beautiful female pharmacist is ready to serve">
+      <img src="logo2.jpg" style="width:100%" onclick="onClick(this)" alt="International famous pharmacy logo">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="new6.jpg" style="width:100%" onclick="onClick(this)" alt="Pharmacy with bright blue light">
+      <img src="new5.jpg" style="width:100%" onclick="onClick(this)" alt="When a woman is looking for medicine at a pharmacy">
+      <img src="111.jpg" style="width:100%" onclick="onClick(this)" alt="This latest-style pharmacy is very sophisticated">
+      <img src="medicine.jpg" style="width:100%" onclick="onClick(this)" alt="A large hall in a pharmacy full of drugs">
+      <img src="logo3.jpg" style="width:100%" onclick="onClick(this)" alt="International famous pharmacy logo">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="new8.jpg" style="width:100%" onclick="onClick(this)" alt="Pharmacy store on the side street">
+      <img src="PROMO.jpg" style="width:100%" onclick="onClick(this)" alt="An elderly woman was consulting a female pharmacist">
+      <img src="pharmacy7.jpg" style="width:100%" onclick="onClick(this)" alt="A girl wearing a mask becomes a drug seller in a pharmacy shop">
+      <img src="new7.jpg" style="width:100%" onclick="onClick(this)" alt="A woman is looking for a drug at a pharmacy">
+      <img src="logo4.jpg" style="width:100%" onclick="onClick(this)" alt="International famous pharmacy logo">
+    </div>
+  </div>
+
+<br><br>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <!-- promosi -->
+<div class="container w3-white"id="about">
+    <br><br><br><br>  <br><br><br><br>
+<center><h1><strong>Keuntungan Membeli di Pharmacy.io?</strong><h1></center>
+    <br><br><br>
+<center>
+<h3><b>Garansi Resmi</b></h3>
+<h4><img src="garansi.jpg" style="width:10%;">   Pharmacy.io memberikan garansi produk yang Anda beli adalah original</h4>  
+<h3><b>Pengiriman Cepat</b></h3>
+<h4><img src="Pengiriman.jpg" style="width:10%;">  Pharmacy.io Dapat memberikan layanan pengiriman produk dalam 1 hari </h4>  
+<h3><b>Harga Terbaik</b></h3>
+<h4><img src="Best.jpg" style="width:10%;">   Nikmati harga produk obat dan kecantikan paling bersaing, dan terbaik</h4>  
+<h3><b>Produk Terlengkap</b></h3>
+<h4><img src="Produk.jpg" style="width:10%;">  Temukan produk kesehatan dan kecantikan terlengkap hanya di Pharmacy.io</h4>  
+</center>>
+  <br><br><br><br>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <h3>INFO</h3>
+        <p>"It Is Easy To Get a Thousand Prescriptions But Hard To Get One Single Remedy" a quote which states that the main key for a person to need treatment is pharmacy</p>      
+      </div>
+    
+      <div class="w3-half">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">OBAT</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">JANTUNG</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">MATA</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NUTRISI</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SUPLEMENT</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">HERBAL</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">PRODUK BAYI</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">ALAT KESEHATAN</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">HYPERTENSI</span>
+          
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by Alhamdulillah </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
